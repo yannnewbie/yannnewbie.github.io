@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Proyek | Sistem Informasi Perpustakaan</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="../index.html">Nama Anda</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#about">Tentang Saya</a></li>
+                    <li><a href="../index.html#projects">Proyek</a></li>
+                    <li><a href="../index.html#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="project-details">
+        <div class="container">
+            <div class="project-header">
+                <h1>Sistem Informasi Perpustakaan</h1>
+                <p class="project-meta">Web Development | Januari 2023 - April 2023</p>
+            </div>
+            
+            <div class="project-content">
+                <div class="project-gallery">
+                    <div class="main-image">
+                        <img src="../images/project1.jpg" alt="Sistem Informasi Perpustakaan">
+                    </div>
+                    <div class="thumbnail-grid">
+                        <img src="../images/project1-1.jpg" alt="Thumbnail 1" class="thumbnail">
+                        <img src="../images/project1-2.jpg" alt="Thumbnail 2" class="thumbnail">
+                        <img src="../images/project1-3.jpg" alt="Thumbnail 3" class="thumbnail">
+                    </div>
+                </div>
+                
+                <div class="project-info">
+                    <h2>Tentang Proyek</h2>
+                    <p>Sistem Informasi Perpustakaan adalah aplikasi web yang dikembangkan untuk memudahkan manajemen operasional perpustakaan sekolah. Aplikasi ini memungkinkan admin untuk mengelola koleksi buku, anggota perpustakaan, dan transaksi peminjaman.</p>
+                    
+                    <h2>Fitur Utama</h2>
+                    <ul>
+                        <li>Manajemen Katalog Buku (CRUD)</li>
+                        <li>Pendaftaran Anggota Perpustakaan</li>
+                        <li>Sistem Peminjaman dan Pengembalian Buku</li>
+                        <li>Notifikasi Email untuk Pengingat Pengembalian</li>
+                        <li>Laporan Statistik Peminjaman</li>
+                        <li>Pencarian Buku dengan Filter</li>
+                    </ul>
+                    
+                    <h2>Teknologi yang Digunakan</h2>
+                    <div class="tech-used">
+                        <span class="tech-item">HTML5</span>
+                        <span class="tech-item">CSS3</span>
+                        <span class="tech-item">JavaScript</span>
+                        <span class="tech-item">PHP</span>
+                        <span class="tech-item">MySQL</span>
+                        <span class="tech-item">Bootstrap</span>
+                    </div>
+                    
+                    <h2>Kontribusi Saya</h2>
+                    <p>Saya bertanggung jawab untuk mengembangkan seluruh front-end aplikasi dan beberapa modul back-end termasuk sistem peminjaman buku dan manajemen anggota. Saya juga mendesain database dan membuat dokumentasi pengguna.</p>
+                    
+                    <div class="project-links">
+                        <a href="#" class="btn"><i class="fab fa-github"></i> Kode Sumber</a>
+                        <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Demo Live</a>
+                        <a href="../index.html#projects" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Kembali ke Portofolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Portofolio Nama Anda. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // Thumbnail gallery interaction
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const mainImage = document.querySelector('.main-image img');
+        
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', function() {
+                mainImage.src = this.src;
+                mainImage.alt = this.alt;
+            });
+        });
+    </script>
+</body>
+</html>
